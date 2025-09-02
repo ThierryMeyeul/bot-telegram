@@ -2,10 +2,11 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 import random
 import os
+from dotenv import load_dotenv
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-TOKEN='8231817887:AAE41IxavQvo-ibSYYkskIfl0SUNxWEp4TY'
+TOKEN=os.getenv('TOKEN')
 
 etatJeu = {}
 
