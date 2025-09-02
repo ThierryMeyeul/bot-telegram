@@ -5,7 +5,8 @@ import os
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-TOKEN = os.environ.get('TELEGRAM_TOKEN', 'TA_CLE_TELEGRAM_ICI')
+TOKEN='8231817887:AAE41IxavQvo-ibSYYkskIfl0SUNxWEp4TY'
+
 etatJeu = {}
 
 # --- Gestion du jeu ---
