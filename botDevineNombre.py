@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+load_dotenv()
 TOKEN=os.getenv('TOKEN')
 
 etatJeu = {}
