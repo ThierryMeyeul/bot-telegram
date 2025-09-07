@@ -73,18 +73,18 @@ async def jouer(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text(f'{indice} - Tentatives restantes: {tentatives}')
 
 # --- Serveur HTTP minimal pour Render ---
-class DummyHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"OK")
+# class DummyHandler(BaseHTTPRequestHandler):
+#     def do_GET(self):
+#         self.send_response(200)
+#         self.end_headers()
+#         self.wfile.write(b"OK")
 
-def run_dummy_server():
-    port = int(os.environ.get("PORT", 5000))
-    server = HTTPServer(("0.0.0.0", port), DummyHandler)
-    server.serve_forever()
+# def run_dummy_server():
+#     port = int(os.environ.get("PORT", 5000))
+#     server = HTTPServer(("0.0.0.0", port), DummyHandler)
+#     server.serve_forever()
 
-threading.Thread(target=run_dummy_server, daemon=True).start()
+# threading.Thread(target=run_dummy_server, daemon=True).start()
 
 # --- Lancement du bot ---
 if __name__ == '__main__':
