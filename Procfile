@@ -1,1 +1,1 @@
-worker: python botDevineNombre.py
+worker: python main.py
