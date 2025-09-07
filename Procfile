@@ -1,1 +1,1 @@
-worker: /home/koyeb/.heroku/python/bin/python botDevineNombre.py
+worker: python botDevineNombre.py
