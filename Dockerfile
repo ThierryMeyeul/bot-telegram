@@ -1,5 +1,5 @@
 # Dockerfile pour Koyeb
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 # Crée le dossier de l'app
 WORKDIR /app
