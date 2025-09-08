@@ -2,3 +2,4 @@ python-telegram-bot==20.3
 python-dotenv
 SQLAlchemy==2.0.18
 PyMySQL==1.1.1
+apscheduler==3.10.4
